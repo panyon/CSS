@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("images/01.jpg") no-repeat top center;
+        }
+        #box{
+            text-align: center;
+        }
+        img{
+            width: 150px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            /*var pic1 = document.getElementById("pic1");
+            var src = pic1.getAttribute("src");
+            var urlSrc = "url(" + src + ")";
+            var pic2 = document.getElementById("pic2");
+            var pic3 = document.getElementById("pic3");
+            pic1.onclick = function () {
+                document.body.style.backgroundImage = 'url(images/01.jpg)';
+            }
+            pic2.onclick = function () {
+                document.body.style.backgroundImage = 'url(images/02.jpg)';
+            }
+            pic3.onclick = function () {
+                document.body.style.backgroundImage = 'url(images/03.jpg)';
+            }
+        }*/
+
+        function showBgi(bodyId, imgId) {
+            var body = document.getElementById(bodyId);
+            var img = document.getElementById(imgId);
+            var src = img.getAttribute("src");
+            //本身 url(images/pic1.jpg),改成字符串表示如下
+            var urlSrc = "url(" + src + ")";
+            console.log(urlSrc);
+            img.onclick = function () {
+                body.style.backgroundImage = urlSrc;
+            }
+        }
+            showBgi("bodyID","pic1");
+            showBgi("bodyID","pic2");
+            showBgi("bodyID","pic3");
+        }
+    </script>
+</head>
+<body id="bodyID">
+<div id="box">
+    <img src="images/01.jpg" alt="" id="pic1"/>
+    <img src="images/02.jpg" alt="" id="pic2"/>
+    <img src="images/03.jpg" alt="" id="pic3"/>
+</div>
+</body>
+</html>

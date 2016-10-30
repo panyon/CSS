@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-size: 12px;
+			font-family: "microsoft yahei","宋体";
+		}
+		li{
+			list-style: none;
+		}
+		a{
+
+			text-decoration: none;
+		}
+		.nav ul{
+			text-align: center;
+			background-color: #eee;
+		}
+		.for1{
+			margin-right: 50px;
+			/*转行内块*/
+			display: inline;
+		}
+		.for1 a{
+			color: black;
+			height: 40px;
+			line-height: 40px;
+		}
+		.for1.line{
+            height: 12px;
+            border-right: 1px solid;
+        }
+        .for1 a h1{
+        	text-indent: -999em;
+        	float: left;
+        }
+        .for1 a img{
+        	width: 40px;
+        	height: 12px;
+        }
+        /*另一种方法*/
+        .nav_2016{
+			margin-top: 20px;
+			background-color: lightgreen;
+        }
+        .nav_2016 ul{
+        	height: 40px;
+        	/*此元素会作为块级表格来显示（类似 <table>）,表格前后带有换行符*/
+        	display: table;
+        	margin: 0 auto;
+        }
+        .nav_2016 .special{
+        	float: left;
+        	margin-right: 50px;
+        }
+        .nav_2016 .special a{
+        	height: 40px;
+        	line-height: 40px;
+        	color: black;
+        }
+		/*搜索框*/
+		input{
+			border-style: none;
+			outline: none;
+		}
+		.search{
+			width: 550px;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+		.search .text{
+			width: 478px;
+			height: 36px;
+			border: 2px solid red;
+			border-right: none;
+			margin-right: -5px;
+			border-top-left-radius: 6px;
+			border-bottom-left-radius: 6px;
+			padding: 0 10px;
+			font-size: 14px;
+		}
+		.search .button{
+			width: 50px;
+			font-size: 16px;
+			letter-spacing: 1px;
+			line-height: 40px;
+			background-color: red;
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li class="for1">
+				<a href="###">
+					<h1>我的主页</h1>
+					<img src="logo.png" alt="" />
+				</a>
+			</li>
+	        <li class="for1"><a href="###">鞋服清仓</a></li>
+	        <li class="for1">☆</li>
+	        <li class="for1"><a href="###">千元优惠</a></li>
+	        <li class="for1">|</li>
+	        <li class="for1"><a href="###">9.9元团购</a></li>
+	        <li class="for1">|</li>
+	        <li class="for1"><a href="###">满100减30</a></li>
+	        <li class="for1">|</li>
+	        <li class="for1"><a href="###">荣耀8</a></li>
+	        <li class="for1">|</li>
+	        <li class="for1"><a href="###">格力空调</a></li>
+	        <li class="for1">|</li>
+	        <li class="for1"><a href="###">小米电脑</a></li>
+	        <li class="for1">☆</li>
+	        <li class="for1"><a href="###">家居服</a></li>
+	    </ul>
+	</div>
+	<div class="nav_2016">
+		<ul>
+			<li class="special"><a href="#">首页</a></li>
+			<li class="special"><a href="#">新闻</a></li>
+			<li class="special"><a href="#">时政</a></li>
+			<li class="special"><a href="#">社会</a></li>
+			<li class="special"><a href="#">国际</a></li>
+			<li class="special"><a href="#">论坛</a></li>
+			<li class="special"><a href="#">人力资源</a></li>
+			<li class="special"><a href="#">关于我们</a></li>
+			<li class="special"><a href="#">关于我们</a></li>
+			<li class="special"><a href="#">关于我们</a></li>
+			<li class="special"><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+	<!---->
+	<div class="search">
+		<form action="">
+			<input type="text" value="笔记本" class="text" />
+			<input type="submit" value="搜索" class="button" />
+		</form>
+	</div>
+</body>
+</html>

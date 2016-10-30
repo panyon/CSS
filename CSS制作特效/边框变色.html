@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		ul li{
+			list-style: none;
+			width: 100px;
+			height: 40px;
+			border: 1px solid gray;
+			float: left;
+			line-height: 40px;
+			text-align: center;
+			/*中间的边框有两个,设置去一边*/
+			margin-left: -1px;
+		}
+		ul li:hover{
+			color: red;
+			border-color: red;
+			z-index: 1;
+			position: relative;
+		}
+	</style>
+<body>
+	<ul>
+		<li>aaa</li>
+		<li>bbb</li>
+		<li>ccc</li>
+		<li>ddd</li>
+	</ul>
+</body>
+</html>
